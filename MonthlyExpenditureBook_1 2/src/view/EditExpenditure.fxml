@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditExpenditureController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="400.0" spacing="10.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <DatePicker fx:id="datePicker" prefWidth="200.0" />
+            <TextField fx:id="descriptionField" prefWidth="200.0" promptText="Description" />
+            <TextField fx:id="amountField" prefWidth="200.0" promptText="Amount" />
+            <ComboBox fx:id="categoryComboBox" prefWidth="200.0" promptText="Category" />
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button fx:id="saveButton" mnemonicParsing="false" text="Save" onAction="#saveExpenditure" />
+                  <Button fx:id="cancelButton" mnemonicParsing="false" text="Cancel" onAction="#closeDialog" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
